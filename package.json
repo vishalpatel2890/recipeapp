@@ -2,6 +2,9 @@
   "name": "recipeapp",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "6.10.3"
+  },
   "dependencies": {
     "antd": "^2.12.1",
     "autoprefixer": "7.1.1",
