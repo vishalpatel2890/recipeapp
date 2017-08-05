@@ -10,7 +10,7 @@ const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
-const paths = require('.config/paths.js');
+const paths = require('./config/paths.js');
 const getClientEnvironment = require('./config/env');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
