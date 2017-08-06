@@ -61,7 +61,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-  "build": "NODE_ENV=production webpack --config node ./config/webpack.config.js --progress --colors",
+  "build": "NODE_ENV=production webpack --config ./config/webpack.config.js --progress --colors",
   "start": "node scripts/start.js",
   "postinstall": "node ./config/webpack.config.js"
 },
