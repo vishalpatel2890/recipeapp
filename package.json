@@ -62,7 +62,8 @@
   },
   "scripts": {
   "build": "NODE_ENV=production webpack --config ./config/webpack.config.js --progress --colors",
-  "start": "node scripts/start.js"
+  "start": "node scripts/start.js",
+  "postinstall": "webpack -p"
 },
   "jest": {
     "collectCoverageFrom": [
