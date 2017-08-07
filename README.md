@@ -1,5 +1,7 @@
 # MINIMALIST RECIPE APP
 
+First full React App designed to store and display recipes.
+
 <div>
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width="150">
 <img src="https://raw.githubusercontent.com/reactjs/redux/master/logo/logo.png" width="100">
@@ -29,3 +31,6 @@
 - [ ] Edit Recipe Component
 - [ ] Crop Images to avoid distortion
 - [ ] Load New Recipes As Added (requires refresh to view new recipes)
+- [ ] Add API auth
+- [ ] Add Users Signup/Login
+- [ ] Create Mobile Version with React Native
