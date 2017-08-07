@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Header from './components/Header'
 import Main from './components/Main'
-// import { Row } from 'antd';
-import Row from 'antd/lib/row';
+import { Row } from 'antd';
+// import Row from 'antd/lib/row';
 import './App.css'
 
 class App extends Component {
