@@ -113,7 +113,7 @@ class AddRecipeForm extends Component {
           {getFieldDecorator('yields', {
 
             rules: [{
-              type: 'number', message: 'This is not a number',
+              type: 'string', message: 'This is not a number',
             },{
               required: true, message: 'Please enter your yield',
             },
