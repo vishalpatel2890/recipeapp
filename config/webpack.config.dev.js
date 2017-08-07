@@ -173,6 +173,9 @@ module.exports = {
           plugins: [['import', { libraryName: 'antd', style: true }]],
           cacheDirectory:true,
         },
+      // { test: /\.(js|jsx)$/,
+      //   loader: 'babel',
+      //   exclude: /node_modules/ },
         // options: {
         //   plugins: [
         //     ['import', { libraryName: 'antd', style: true }],
