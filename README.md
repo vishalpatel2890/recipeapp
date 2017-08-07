@@ -3,7 +3,7 @@
 ## BUILT WITH
 * ### create-react-app
 * ### redux
-* ## ant.design framework (https://ant.design)
-* [DJNAGO REST API](https://github.com/vishalpatel2890/recipeapi)
+* ### [ant.design framework](https://ant.design)
+* ### [DJNAGO REST API](https://github.com/vishalpatel2890/recipeapi)
 
 ## [Deployed to HEROKU](https://arcane-castle-90995.herokuapp.com/)
