@@ -164,7 +164,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         include: paths.appSrc,
         loader: require.resolve('babel-loader'),
-        options: {
+        // options: {
           options: {
             plugins: [['import', { libraryName: 'antd', style: true }]],
             cacheDirectory:true,
