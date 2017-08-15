@@ -62,7 +62,7 @@ export function fetchRecipe(url) {
           'X-Requested-With': 'XMLHttpRequest',
           'Access-Control-Allow-Origin': '*',
           // 'Access-Control-Allow-Credentials': 'True',
-          'Access-Control-Allow-Headers': 'accept, accept-encoding, authorization, content-type, dnt, origin, user-agent, x-csrftoken, x-requested-with',
+          'Access-Control-Allow-Headers': 'access-control-allow-headers,access-control-allow-methods,access-control-allow-origin,x-requested-with',
           'Access-Control-Allow-Methods' : 'GET, OPTIONS'
       },
     })
