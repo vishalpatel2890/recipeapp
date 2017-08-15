@@ -61,7 +61,6 @@ export function fetchRecipe(url) {
           'Content-Type':'text/plain',
           'X-Requested-With': 'XMLHttpRequest',
           'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Headers': 'Content-Type, Content-Range, Content-Disposition, Content-Description',
           'Access-Control-Allow-Methods' : 'GET, OPTIONS'
       },
     })

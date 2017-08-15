@@ -18,7 +18,7 @@ function handleResponse(response) {
 
 class RecipeList extends Component {
 
-    componentDidMount = (props) => {
+    componentWillMount = (props) => {
       this.props.fetchRecipe('https://quiet-citadel-22666.herokuapp.com/recipes/');
     }
 
@@ -37,7 +37,7 @@ class RecipeList extends Component {
     render() {
       const {recipes} = this.props;
       return(
-        
+
         <div style={{ background: '#ECECEC', padding: '30px' }}>
           <Row gutter={8} style={{cursor:'default'}}>
               {recipes.map(recipe=>
