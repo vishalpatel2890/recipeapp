@@ -162,7 +162,7 @@ class AddRecipeForm extends Component {
 
 
         <FormItem {...tailFormItemLayout}>
-          <Button type="primary" htmlType="submit">Add Recipe</Button>
+          <Button type="primary" htmlType="submit">Add The Recipe</Button>
         </FormItem>
       </Form>
     </div>
