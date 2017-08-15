@@ -93,7 +93,7 @@ class RecipeDetails extends Component {
                 <Col span={12}><Button type="primary">Button</Button></Col>
               </Row>
             </TabPane>
-              {steps.map(step=> key={step.id} <TabPane tab={step.stepno} key={step.stepno} >
+              {steps.map(step=> key={step.id}, <TabPane tab={step.stepno} key={step.stepno} >
                 <Row gutter={8}>
                   <Col span={12} className="steps">
                     {step.steps}
