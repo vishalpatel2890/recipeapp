@@ -61,8 +61,8 @@ export function fetchRecipe(url) {
           'Content-Type':'text/plain',
           'X-Requested-With': 'XMLHttpRequest',
           'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Credentials': True,
-          'Access-Control-Allow-Headers': 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers',
+          // 'Access-Control-Allow-Credentials': 'True',
+          'Access-Control-Allow-Headers': 'Access-Control-Allow-Headers, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers',
           'Access-Control-Allow-Methods' : 'GET, OPTIONS'
       },
     })
