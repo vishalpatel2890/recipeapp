@@ -54,7 +54,7 @@ class RecipeList extends Component {
                         <h3>{recipe.recipename} </h3>
                       </div>
                     <Icon id={recipe.id} onClick={this.deleteRecipe} style={{cursor:'pointer', fontSize:20, float:'right', paddingRight: 7}} type="delete" />
-                    <Icon id={recipe.id} style={{cursor:'pointer', fontSize:20, float:'right', paddingRight:7}} type="edit" />
+                    <Icon id={recipe.id} style={{cursor:'pointer', fontSize:300, float:'right', paddingRight:7}} type="edit" />
 
                   </Card>
               </Col>
