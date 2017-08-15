@@ -55,7 +55,7 @@ export function fetchRecipe(url) {
   return dispatch => {
 
     return fetch(url, {
-      mode:'no-cors',
+      mode:'cors',
       headers: {
           'Accept': 'application/json',
           'Content-Type':'text/plain',
