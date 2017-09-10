@@ -6,7 +6,6 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import configureStore from './store/configureStore';
 import './index.css';
-import { browserHistory } from 'react-router';
 import 'babel-polyfill';
 
 

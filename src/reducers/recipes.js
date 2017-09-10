@@ -1,4 +1,4 @@
-import {RECEIVE_RECIPES, RECEIVE_STEPS, RECEIVE_INGREDIENTS, HAS_ERRORED} from '../constants/appConstants';
+import {RECEIVE_RECIPES, RECEIVE_STEPS, RECEIVE_INGREDIENTS, HAS_ERRORED, DELETE_SUCCESS} from '../constants/appConstants';
 
 // const initialState = {
 //     isLoading : true,
@@ -15,6 +15,9 @@ export function recipe(
 
     case RECEIVE_RECIPES:
      return [...state, ...action.json];
+
+     case DELETE_SUCCESS:
+      return[...state, ...action.payload];
 
     case HAS_ERRORED:
           return action.hasErrored;
@@ -55,27 +58,3 @@ export function steps(
              return state
  }
  }
-
-
-
-
-
-
-// export function recipes(  state = {
-//     isFetching: false,
-//     didInvalidate: false,
-//     recipes: []
-//   },
-//   action
-// ) {
-//     switch (action.type) {
-//         case 'FETCH_RECIPE':
-//         return Object.assign({}, state, {
-//           isFetching: true,
-//           didInvalidate: false,
-//           recipes : action.recipes
-//         })
-//         default:
-//             return state;
-//     }
-// }

@@ -6,17 +6,6 @@ import request from 'superagent';
 
 const FormItem = Form.Item;
 
-// function handleResponse(response) {
-//   return response.json()
-//     .then(json => {
-//       if (response.ok) {
-//         return json
-//       } else {
-//         return Promise.reject(json)
-//       }
-//     })
-// }
-
 class AddRecipeForm extends Component {
 
   constructor() {
@@ -155,7 +144,7 @@ class AddRecipeForm extends Component {
         </FormItem>
       </Col>
           <Col>
-            <div>{this.state.files.map((file) => <img key={1} src={file.preview} width={200}/> )}</div>
+            <div>{this.state.files.map((file) => <img key={1} src={file.preview} alt='' width={200}/> )}</div>
 
           </Col>
         </Row>

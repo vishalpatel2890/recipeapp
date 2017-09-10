@@ -1,11 +1,11 @@
-import { combineReducers } from 'redux';
-import { recipe, steps, ingredients } from './recipes';
+import { combineReducers } from 'redux'
+import { recipe, steps, ingredients } from './recipes'
 
 const appReducer = combineReducers({
-    recipe,
-    steps,
-    ingredients
-});
+  recipe: recipe,
+  steps: steps,
+  ingredients: ingredients
+})
 
 const rootReducer = (state, action) => {
   if (action.type === 'CLEAR_REDUX') {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css'
-import { fetchRecipe, fetchSteps, fetchStepsIngr, fetchIngredients, clearRedux } from '../actions/recipeActions';
+import { fetchStepsIngr, clearRedux } from '../actions/recipeActions';
 import { Tabs, Button, Row, Col, Upload, Icon, message, Checkbox} from 'antd';
 import { connect } from 'react-redux';
 
@@ -93,7 +93,7 @@ class RecipeDetails extends Component {
                 <Col span={12}><Button type="primary">Button</Button></Col>
               </Row>
             </TabPane>
-              {steps.map(step=> <TabPane key={step.stepno} key={step.stepno} tab={step.stepno}  >
+              {steps.map(step=> <TabPane key={step.stepno} tab={step.stepno}  >
                 <Row gutter={8}>
                   <Col span={12} className="steps">
                     {step.steps}
