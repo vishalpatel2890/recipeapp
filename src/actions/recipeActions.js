@@ -127,4 +127,5 @@ export function deleteRecipe(id) {
       .then(dispatch(deleteSuccess()))
       .catch(error => console.log(error))
   }
+  console.log('Item Deleted')
 }
