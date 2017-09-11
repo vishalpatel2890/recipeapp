@@ -21,7 +21,6 @@ export function recipe(state = [], action) {
 
     case DELETE_SUCCESS:
       return [...state, ...action.payload]
-      console.log('delete success')
 
     case HAS_ERRORED:
       return action.hasErrored
