@@ -30,7 +30,7 @@ First full React App designed to store and display recipes.
 - [ ] Edit Steps Component
 - [ ] Edit Recipe Component
 - [ ] Crop Images to avoid distortion
-- [ ] Load New Recipes As Added (requires refresh to view new recipes)
+- [x] Load New Recipes As Added (requires refresh to view new recipes)
 - [ ] Add API auth
 - [ ] Add Users Signup/Login
 - [ ] Create Mobile Version with React Native
