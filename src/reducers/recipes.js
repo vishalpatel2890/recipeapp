@@ -2,6 +2,7 @@ import {
   RECEIVE_RECIPES,
   RECEIVE_STEPS,
   RECEIVE_INGREDIENTS,
+<<<<<<< HEAD
   HAS_ERRORED,
   DELETE_SUCCESS
 } from '../constants/appConstants'
@@ -12,17 +13,36 @@ import {
 // };
 
 export function recipe(state = [], action) {
-  switch (action.type) {
-    // case REQUEST_RECIPES:
-    //   return [state, action.isLoading];
+=======
+  RECIPE_HAS_ERRORED,
+  DELETE_SUCCESS,
+  ADD_RECIPE
+} from '../constants/appConstants'
 
+export const recipe = (state = [], action) => {
+>>>>>>> development
+  switch (action.type) {
     case RECEIVE_RECIPES:
       return [...state, ...action.json]
+<<<<<<< HEAD
 
     case DELETE_SUCCESS:
       return [...state, ...action.payload]
 
     case HAS_ERRORED:
+=======
+
+    case ADD_RECIPE:
+      return [state, action.file]
+
+    case DELETE_SUCCESS:
+      return [
+        ...state.slice(0, action.payload),
+        ...state.slice(action.payload + 1)
+      ]
+
+    case RECIPE_HAS_ERRORED:
+>>>>>>> development
       return action.hasErrored
 
     default:
@@ -30,7 +50,11 @@ export function recipe(state = [], action) {
   }
 }
 
+<<<<<<< HEAD
 export function ingredients(state = [], action) {
+=======
+export const ingredients = (state = [], action) => {
+>>>>>>> development
   switch (action.type) {
     // case REQUEST_RECIPES:
     //   return [state, action.isLoading];
@@ -43,7 +67,11 @@ export function ingredients(state = [], action) {
   }
 }
 
+<<<<<<< HEAD
 export function steps(state = [], action) {
+=======
+export const steps = (state = [], action) => {
+>>>>>>> development
   switch (action.type) {
     // case REQUEST_RECIPES:
     //   return [state, action.isLoading];
