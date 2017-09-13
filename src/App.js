@@ -1,25 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Header from './components/Header'
 import Main from './components/Main'
-import { Row } from 'antd';
-// import Row from 'antd/lib/row';
+import { Row } from 'antd'
 import './App.css'
 
 class App extends Component {
   render() {
-    return(
-<Row>
+    return (
+      <Row>
+        <div>
+          <Header />
+        </div>
 
-      <div>
-        <Header />
-      </div>
-
-      <div>
-        <Main />
-      </div>
-
-  </Row>
-    );
+        <div>
+          <Main />
+        </div>
+      </Row>
+    )
   }
 }
 

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { fetchRecipe, deleteRecipe } from '../actions/recipeActions'
 import { Card, Col, Row, Icon } from 'antd'
 import { connect } from 'react-redux'
-import Gap from './Gap'
 import { Link } from 'react-router-dom'
 
 class RecipeList extends Component {
@@ -23,7 +22,7 @@ class RecipeList extends Component {
           {recipes.map((recipe, idx) => {
             return (
               <Col span={8} key={recipe.id}>
-                <Gap />
+                <br />
 
                 <Card
                   style={{

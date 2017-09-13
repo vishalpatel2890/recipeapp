@@ -3,11 +3,8 @@ import fetch from 'isomorphic-fetch'
 import request from 'superagent'
 import {
   RECEIVE_RECIPES,
-  RECEIVE_STEPS,
-  RECEIVE_INGREDIENTS,
-  HAS_ERRORED,
-  DELETE_SUCCESS,
-  ADD_RECIPE
+  RECIPE_HAS_ERRORED,
+  DELETE_SUCCESS
 } from '../constants/appConstants'
 
 export const receiveRecipe = json => {
@@ -23,30 +20,9 @@ export const clearRedux = () => {
   }
 }
 
-export const receiveSteps = steps => {
-  return {
-    type: RECEIVE_STEPS,
-    steps
-  }
-}
-
-export const receiveIngredients = ingredients => {
-  return {
-    type: RECEIVE_INGREDIENTS,
-    ingredients
-  }
-}
-
 export const errRecipe = bool => {
   return {
-    type: HAS_ERRORED,
-    hasErrored: bool
-  }
-}
-
-export const errSteps = bool => {
-  return {
-    type: HAS_ERRORED,
+    type: RECIPE_HAS_ERRORED,
     hasErrored: bool
   }
 }
@@ -72,39 +48,6 @@ export const fetchRecipe = url => {
       dispatch(errRecipe(true))
     }
   }
-}
-
-export const fetchSteps = url => {
-  return async dispatch => {
-    try {
-      const res = await fetch(url, {
-        mode: 'cors'
-      })
-      const steps = await res.json
-      dispatch(receiveSteps(steps))
-    } catch (err) {
-      dispatch(errSteps(true))
-    }
-  }
-}
-
-export const fetchIngredients = url => {
-  return async dispatch => {
-    try {
-      const res = await fetch(url, {
-        mode: 'cors'
-      })
-      const ingredients = await res.json()
-      dispatch(receiveIngredients(ingredients))
-    } catch (err) {
-      dispatch(errSteps(true))
-    }
-  }
-}
-
-export const fetchStepsIngr = (urls, urli) => {
-  return dispatch =>
-    Promise.all([dispatch(fetchSteps(urls)), dispatch(fetchIngredients(urli))])
 }
 
 export const deleteSuccess = idx => {
@@ -138,19 +81,13 @@ export const deleteRecipe = (id, idx) => {
   }
 }
 
-export const postRecipe = file => async dispatch => {
+export const postRecipe = (file, history) => async dispatch => {
   try {
-    await request
+    const res = await request
       .post('https://quiet-citadel-22666.herokuapp.com/recipes/')
       .send(file)
+    history.push('/recipelist')
   } catch (err) {
     console.log(err)
-  }
-}
-
-export const addRecipe = file => {
-  return {
-    type: ADD_RECIPE,
-    file
   }
 }

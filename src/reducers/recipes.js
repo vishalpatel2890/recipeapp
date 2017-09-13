@@ -2,7 +2,7 @@ import {
   RECEIVE_RECIPES,
   RECEIVE_STEPS,
   RECEIVE_INGREDIENTS,
-  HAS_ERRORED,
+  RECIPE_HAS_ERRORED,
   DELETE_SUCCESS,
   ADD_RECIPE
 } from '../constants/appConstants'
@@ -21,7 +21,7 @@ export const recipe = (state = [], action) => {
         ...state.slice(action.payload + 1)
       ]
 
-    case HAS_ERRORED:
+    case RECIPE_HAS_ERRORED:
       return action.hasErrored
 
     default:

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Form, Input, Tooltip, Icon, Row, Col, Button, Upload } from 'antd'
-import Gap from './Gap'
 import Dropzone from 'react-dropzone'
 import { withRouter } from 'react-router-dom'
 import { postRecipe } from '../actions/recipeActions'
@@ -25,18 +24,18 @@ class AddRecipeForm extends Component {
   }
 
   handleSubmit = (event, values, props) => {
+    const { history, postRecipe, form } = this.props
     event.preventDefault()
-    this.props.form.validateFieldsAndScroll((err, values) => {
+    form.validateFieldsAndScroll((err, values) => {
       if (!err) {
         var file = new FormData()
         file.append('image', this.state.files[0])
         file.append('recipename', values.recipename)
         file.append('yields', values.yields)
         file.append('portionsize', values.portionsize)
-        this.props.postRecipe(file)
-        this.props.form.resetFields()
+        postRecipe(file, history)
+        form.resetFields()
         this.state = { files: [] }
-        this.props.history.push('/recipelist')
       } else {
         console.log(err)
       }
@@ -70,8 +69,8 @@ class AddRecipeForm extends Component {
 
     return (
       <div>
-        <Gap />
-        <Gap />
+        <br />
+        <br />
         <Form onSubmit={this.handleSubmit.bind(this)} id="addform">
           <FormItem {...formItemLayout} label="Recipe Name" hasFeedback>
             {getFieldDecorator('recipename', {
@@ -162,7 +161,7 @@ class AddRecipeForm extends Component {
 
 function mapDispatchToProps(dispatch) {
   return {
-    postRecipe: file => dispatch(postRecipe(file))
+    postRecipe: (file, history) => dispatch(postRecipe(file, history))
   }
 }
 
