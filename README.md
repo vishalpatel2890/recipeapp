@@ -3,7 +3,7 @@
 First full React App designed to store and display recipes.
 
 <div>
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width="150">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="150">
 <img src="https://raw.githubusercontent.com/reactjs/redux/master/logo/logo.png" width="100">
 <img src="https://t.alipayobjects.com/images/rmsweb/T1B9hfXcdvXXXXXXXX.svg" width="100">
 <img src="http://www.django-rest-framework.org/img/logo.png" width="200">
