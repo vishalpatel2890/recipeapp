@@ -1,6 +1,6 @@
 # MINIMALIST RECIPE APP
 
-First full React App designed to store and display recipes.
+First full React App designed to store and display recipes. 
 
 <div>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="150">
