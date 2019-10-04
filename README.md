@@ -1,4 +1,4 @@
-# MINIMALIST RECIPE APP 
+# MINIMALIST RECIPE APP  
 
 First full React App designed to store and display recipes.  
  
