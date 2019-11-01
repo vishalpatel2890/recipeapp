@@ -9,7 +9,7 @@ First full React App designed to store and display recipes.
 <img src="http://www.django-rest-framework.org/img/logo.png" width="200">
 <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/04/1461122387heroku-logo.jpg" width="100">
 </div>
-
+ 
  
 ## BUILT WITH
 * ### create-react-app
